@@ -1,0 +1,103 @@
+body{
+    background-color:whitesmoke;
+}
+.box{
+    /* border: solid grey 1px; */
+    width: 560px;
+    height: 330px;
+    padding:100px;
+    border-radius: 20px;
+    /* box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3); */
+    background-color:white;
+}
+/* .image{
+    display:inline;
+    margin-left:10%;
+} */
+.admin{
+    width:200px;
+    height:240px;
+    /* border:2px solid black; */
+    display:inline-block;
+    margin-top:-13%;
+    border-radius:5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px
+}
+.admin:hover{
+    background-color:#6D6D6D;
+}
+#img1{
+    margin-right: 40px;
+    border: none;
+    width:200px;
+    height:180px;
+}
+.juruteknik{
+    width:200px;
+    height:240px;
+    /* border:2px solid black; */
+    display:inline-block;
+    margin-left:5%;
+    margin-top:-13%;
+    border-radius:5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px
+}
+.juruteknik:hover{
+    background-color:#6D6D6D;
+}
+#img2{
+    margin-right: 40px;
+    width:200px;
+    border:none;
+    height:180px;
+}
+.text{
+    margin-top: 30px;
+}
+input[type="email"]{
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius:5px;
+    border-color: transparent;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    outline-color: none;
+}
+input[type="password"]{
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius:5px;
+    border-color: transparent;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    outline-color: none;
+}
+input[type="email"]:focus{
+background:transparent;
+border-bottom-color: #93DEFF;
+box-shadow:none;
+border-bottom-left-radius: none;
+border-bottom-right-radius: none;
+}
+input[type="password"]:focus{
+    background:transparent;
+    border-bottom-color: #93DEFF;
+    box-shadow:none;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+}
+button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #93DEFF;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    border:none;
+    color: rgb(0, 0, 0);
+    box-shadow:8px 6px #6D6D6D;
+}
+button:hover{
+    background-color:#6D6D6D;
+    box-shadow:none;
+}

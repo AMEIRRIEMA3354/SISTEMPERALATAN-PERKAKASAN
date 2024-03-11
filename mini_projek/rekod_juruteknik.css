@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* .content {
+   margin: 0;
+   margin-top: 1px;
+} */
+
+/* .search {
+    margin-left: 70%;
+    margin-top: 5%;
+} */
+
+table {
+    /* margin-top: 5px; */
+    /* border-radius: 5px; */
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+th {
+    border: solid grey 1px;
+    padding: 10px; /* Menambah padding untuk meningkatkan keterbacaan */
+    border-left: none;
+    border-right: none;
+    width: 100px; /* Sesuaikan lebar th mengikut keperluan */
+    min-height:130px;
+}
+
+td {
+    text-align: center;
+    height: 30px;
+    border: none;
+    width: 100px; /* Sesuaikan lebar td mengikut keperluan */
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+#update{
+    /* margin-top: 20px; */
+    width: 70px;
+    height: 50px;
+    background-color:limegreen;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 6px #6D6D6D;
+}
+#delete {
+    /* margin-top: 20px; */
+    width: 70px;
+    height: 50px;
+    background-color: red;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 6px #6D6D6D;
+}
+
+#update:hover
+,#delete:hover {
+    background-color: #6D6D6D;
+    box-shadow: none;
+}
+.header-box{
+    /* padding: 3px; */
+    background-color:#93DEFF;
+    margin-bottom: 10rem;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 27rem;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 20px;
+    
+}
+.nav{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    list-style: none;
+
+}
+.nav ul li{
+    cursor: pointer;
+    float:center;
+}
+img{
+    width: 90px;
+    background-color: aliceblue;
+    border-radius: 20rem;
+}
+.nav ul {
+    gap: 20px;
+}
+select{
+    margin-left: -20px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 50vh;
+    /* box-shadow: 2px 5px 10px 5px rgb(12, 54, 242); */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+li{
+    text-align:center;
+}
+ul{
+    position: absolute;
+    right: 120vh;
+}
+.tulisan{
+    margin-top:5%;
+    font-weight: bold;
+    color:black;
+
+}
+#bsemua,#bmonitor,#bmouse,#bkeyboard,#bspeaker{
+    width: 110px;
+    height: 40px;
+    background-color: whitesmoke;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    border:none;
+    color: rgb(0, 0, 0);
+    box-shadow:8px 6px #6D6D6D;
+    cursor:hand;
+}
+#bsemua:hover,#bmonitor:hover,#bmouse:hover,#bkeyboard:hover,#bspeaker:hover{
+    background-color:#6D6D6D;
+    box-shadow:none;
+}
+#paparandataperalatan-semua{
+    position: absolute;
+    top: 17%;
+    width:100%;
+}
+/* permulaan paparan monitor */
+#paparandataperalatan-monitor{
+    position: absolute;
+    top: 17%;
+    width:100%;
+    display:none;
+    /* visibility:hidden; */
+}
+/* penutup paparan monitor */
+/* permulaan paparan mouse */
+#paparandataperalatan-mouse{
+    position: absolute;
+    top: 17%;
+    width:100%;
+    display:none;
+    /* visibility:hidden; */
+} 
+/* penutup paparan mouse */
+/* permulaan paparan keyboard */
+#paparandataperalatan-keyboard{
+    position: absolute;
+    top: 17%;
+    width:100%;
+    display:none;
+    /* visibility:hidden; */
+}
+/* penutup paparan keyboard */
+/* permulaan paparan speaker */
+#paparandataperalatan-speaker{
+    position: absolute;
+    top: 17%;
+    width:100%;
+    display:none;
+    /* visibility:hidden; */
+} 
+/* penutup paparan speaker */
+/*Kalau nk adjust kedudukan table data
+ubah "css top"*/

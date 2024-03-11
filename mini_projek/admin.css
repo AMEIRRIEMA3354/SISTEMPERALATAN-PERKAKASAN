@@ -1,0 +1,150 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke;
+}
+img{
+    text-align: center;
+    width: 140px;
+    height: 100px;
+    position: relative;
+    left: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 60px;
+}
+.form{
+    background-color: white;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 3px;
+    width: 580px;
+
+}
+.form input, select{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom:1vh;
+    padding: 10px;
+    margin-bottom: 11px;
+    color:black;
+    outline-color: none;
+    border: solid 1px rgb(197, 188, 188);
+}
+input{
+    width: 70vh;
+    margin-top: 10px;
+}
+input[type="text"]{
+    background:transparent;
+    border-bottom-color: #93DEFF;
+    box-shadow:none;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+select{
+    width: 73vh;
+}
+
+/*Sidenote start here*/
+.sidenote{
+    background-color: #93DEFF;
+    padding: 20px;
+    border-radius:5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+/*Sidenote end here*/
+
+.adjust{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    position: relative;
+    left: 1vh;
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color: #93DEFF;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow:8px 6px #6D6D6D;
+    
+}
+
+button[type="cancel"]{
+    background-color: red;
+    color: white;
+}
+button[type="submit"]{
+    width: 60vh;
+}
+/*Header start here*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 1px 10px black;
+    position: sticky;
+    top: 0;
+}
+.header ul, li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    
+}
+.header ul, li, #srch{
+    
+    width:120px;
+    gap: 30px;
+
+}
+.header ul{
+    position: relative;
+    right: 20%;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+input[type="date"]{
+    height: 40px;
+}
+#pilihan{
+    height: 50px;
+    position: relative;
+    top: 1.5vh;
+    font-size: 15px;
+    border-bottom-width: 8px;
+}
+li #Kemas{
+    margin-left: 10vh;
+}
+select{
+    margin-top: 10px;
+}
+/*Header end here*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- web header -->
+    <div class="header">
+       <img src="logo.png" alt="Link-Rail Logo">
+       <!-- logo -->
+       <!-- alt berfungsi untuk memberitahu apa benda yang dipaparkan sekiranya image/bahan tidak dapat dipaparkan -->
+       <h2>Sistem Pengurusan Peralatan dan Perkakasan</h2>
+    </div>
+    <!-- web content -->
+    <div class="content">
+        <p><b><u>Terkini !!</u></b></p>
+          <ol>
+            <li>Sila kemaskini data yang terbaharu untuk penambahbaikkan </li>
+            <li> Sebarang peralatan baharu perlu direkodkan dengan kadar segera</li>
+          </ol>
+        <a href="form_admin.php">
+        <div class="form">
+            <img src="form.png" alt="Icon Borang" srcset="" id="imageform">
+            <h4>Borang Peralatan</h4>
+        </div>
+        </a>
+        <a href="rekod_juruteknik.php">
+        <div class="record">
+            <img src="record.png" alt="Icon Rekod" srcset="" id="imagerecord">
+            <h4>Rekod Peralatan</h4>
+        </div>
+        </a>
+        <div class="card">
+            <div class="box1">
+            <p class='tbox1'>Jumlah Keyboard:
+            <?php
+                           $papar = "SELECT COUNT(Keyboard) as Keyboard from maklumat_peralatan";
+                           $result = $connect->query($papar);
+                           if($result->mysqli_num_rows > 0){
+                            while($row = $result->fetch_assoc()){
+                                echo "<p class='tbox1'>".$row["Keyboard"]."</p>";
+                            }
+                           }
+                           ?>
+            </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
